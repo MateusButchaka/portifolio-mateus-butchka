@@ -1,0 +1,327 @@
+
+body{
+    max-width: 1400px;
+    margin: 0 auto;
+    position: 0;
+   background-image: url(./imagem/bg.png);
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Tilt Warp', cursive;;
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+    overflow: -moz-scrollbars-none; 
+    overflow: hidden scroll; 
+    animation: moveBackground 200s steps(10000) infinite;
+}
+
+@keyframes moveBackground {
+    from { background-position: 0 0; }
+    to { background-position: calc(100% + 100vw) 0; }
+  }
+  
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; 
+}
+
+nav{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 80px;
+}
+  
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 12px 20px;
+    margin: 0 10px;
+    transition: all 0.3s ease-in-out;  
+}
+  
+nav a:hover {
+   color: #1e7af9;
+}
+
+   
+.nav-fix{
+
+    z-index: 1;
+    color: white;
+    margin-top: -150px;
+    position: absolute;
+    height: 100px; 
+    
+}
+.iconav{
+    font-size: 30px;
+    display: flex;
+    position: relative;
+    bottom:240px;
+    left: 235px; 
+}
+.img-nav{
+    position: relative;
+    left: -100px;
+    top: 20px;
+}
+.nome{
+    width: 500px;
+    position: absolute;
+    float: inline-end;
+    top: 0;
+    margin-top: 0px;
+
+}
+.texto-imagem{
+    position: relative;
+    top: 20px;
+}
+.dev{
+    margin-top: 210px;
+    margin-bottom: 50px;
+}
+.inicio{
+    font-size: 30px;
+    color: white;
+    position: relative;
+    text-align: center;
+    margin-right: 650px;
+    margin-left: auto;
+    margin-top: 150px;
+}
+.Linkedinbuton{
+    filter: grayscale(1);
+    
+}
+.Linkedinbuton:hover{
+    filter: grayscale(0);
+    
+}
+
+.minhafoto{
+    width: 500px;
+    position:relative;
+    top: -400px;
+    left: 700px;
+    
+    
+}
+.imgsobre{
+   width: 400px; 
+   margin-top: -300px;
+}
+.sobre {
+    
+    text-align: center;
+    font-size: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    color: white;
+}
+  
+
+
+
+
+
+
+
+.hidden {
+    opacity: 0;
+  }
+  
+  .fade-in {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
+  
+
+
+
+
+
+
+.textosobre-container {
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+    text-align: justify;
+}
+  
+.imgprojetos{
+    width: 400px;
+    margin-top: 50px;
+}
+
+.imghabilidades{
+    width: 400px;
+    
+}
+.iconhabilidades {
+    position: relative;
+    
+}
+
+.container {
+    filter: grayscale(1);
+    position: relative; 
+}
+.container:hover{
+    filter: grayscale(0);
+}
+span{
+    width: 500px;
+    height: 200px;
+    margin-left: -200px;
+}
+.aviso{
+    color: rgba(255, 255, 255, 0.242);
+    margin-left: 600px;
+}
+
+.texto{
+    width: 50%;
+}
+.texto-hover {
+    color: white;
+    position:absolute;
+    text-align: center;
+    left: 800px;
+    top: 50px;
+    display: none; 
+}
+.texto-hover2 {
+    color: white;
+    position:absolute;
+    text-align: center;
+    left: 636px;
+    top: 50px;
+    display: none; 
+}
+.texto-hover3 {
+    color: white;
+    position:absolute;
+    text-align: center;
+    left: 472px;
+    top: 50px;
+    display: none; 
+}
+.texto-hover4 {
+    color: white;
+    position:absolute;
+    text-align: center;
+    left: 800px;
+    top: -112px;
+    display: none; 
+}
+.texto-hover5 {
+    color: white;
+    position:absolute;
+    text-align: center;
+    left: 636px;
+    top: -112px;
+    display: none; 
+}
+.texto-hover6 {
+    color: white;
+    position:absolute;
+    text-align: center;
+    left: 472px;
+    top: -112px;
+    display: none; 
+}
+  
+.container:hover .texto-hover {
+    display: block; 
+    position: absolute;
+}
+.container:hover .texto-hover2 {
+    display: block; 
+    position: absolute;
+}
+.container:hover .texto-hover3 {
+    display: block; 
+    position: absolute;
+}
+.container:hover .texto-hover4 {
+    display: block; 
+    position: absolute;
+}
+.container:hover .texto-hover5 {
+    display: block; 
+    position: absolute;
+}
+.container:hover .texto-hover6 {
+    display: block; 
+    position: absolute;
+}
+
+.row{
+    margin: 0 auto; 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
+    margin-right: 600px;
+}
+
+.icohtml:hover{
+    background-image: url(./imagem/html1.png);
+}
+.icocss:hover{
+    background-image: url(./imagem/css1.png) ;
+}
+.icojs:hover{
+    background-image: url(./imagem/js1.png) ;
+}
+.icojq:hover{
+    background-image: url(./imagem/jq1.png) ;
+}
+.icobs:hover{
+    background-image: url(./imagem/bs1.png) ;
+}
+.icogit:hover{
+    background-image: url(./imagem/git1.png) ;
+}
+.info-footer{
+    color: white;
+    position: relative;
+    top: 280px;
+    right:400px;
+    
+}
+footer{
+    position: relative; 
+    color: white;
+}
+.E-mail{
+    color:white;
+    position: relative;
+    top: 280px;
+    right: 380px;
+}
+.feito{
+    color:white;
+    position: relative;
+    top: 265px;
+    right: 470px;
+}
+.desigin{
+    color:white;
+    position: relative;
+    top: 250px;
+    right: 460px;
+}
+
+
+
+
+
+
