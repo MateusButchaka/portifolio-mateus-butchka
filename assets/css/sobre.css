@@ -1,0 +1,31 @@
+.imgsobre{
+    width: 400px; 
+    margin-top: -300px;
+}
+.sobre {
+     
+    text-align: center;
+    font-size: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    color: white;
+}
+   
+ 
+.hidden {
+    opacity: 0;
+}
+   
+.fade-in {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+   
+ 
+ 
+.textosobre-container {
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+    text-align: justify;
+}

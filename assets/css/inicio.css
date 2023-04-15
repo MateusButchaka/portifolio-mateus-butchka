@@ -1,0 +1,120 @@
+body{
+    max-width: 1400px;
+    margin: 0 auto;
+    position: 0;
+    background-image: url(/assets/img/bg.png);
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Tilt Warp', cursive;;
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+    overflow: -moz-scrollbars-none; 
+    overflow: hidden scroll; 
+    animation: moveBackground 200s steps(10000) infinite;
+}
+
+@keyframes moveBackground {
+    from { background-position: 0 0; }
+    to { background-position: calc(100% + 100vw) 0; }
+}
+  
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; 
+}
+
+
+
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 80px;   
+}
+  
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 12px 20px;
+    margin: 0 10px;
+    transition:  0.3s ease-in-out;  
+    
+}
+  
+nav a:hover {
+   color: #1e7af9;
+   
+}
+
+   
+.nav-fix{
+
+    z-index: 1;
+    color: white;
+    margin-top: -150px;
+    position: absolute;
+    height: 100px; 
+    
+}
+.iconav{
+    font-size: 30px;
+    display: flex;
+    position: relative;
+    bottom:240px;
+    left: 235px; 
+}
+.img-nav{
+    position: relative;
+    left: -100px;
+    top: 20px;
+}
+
+
+
+.nome{
+    width: 500px;
+    position: absolute;
+    float: inline-end;
+    top: 0;
+    margin-top: 0px;
+
+}
+.texto-imagem{
+    position: relative;
+    top: 20px;
+}
+.dev{
+    margin-top: 210px;
+    margin-bottom: 50px;
+}
+.inicio{
+    font-size: 30px;
+    color: white;
+    position: relative;
+    text-align: center;
+    margin-right: 650px;
+    margin-left: auto;
+    margin-top: 150px;
+}
+.Linkedinbuton{
+    filter: grayscale(1);
+    
+}
+.Linkedinbuton:hover{
+    filter: grayscale(0);
+    
+}
+
+.minhafoto{
+    width: 500px;
+    position:relative;
+    top: -400px;
+    left: 700px;
+      
+}
