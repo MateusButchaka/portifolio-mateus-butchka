@@ -28,7 +28,10 @@ body{
 }
 
 
-
+.cabecalho{
+    max-width: 100%;
+    height: auto;
+}
 
 nav{
     display: flex;
@@ -54,25 +57,20 @@ nav a:hover {
 
    
 .nav-fix{
-
     z-index: 1;
-    color: white;
-    margin-top: -150px;
-    position: absolute;
-    height: 100px; 
-    
+    color: rgb(255, 255, 255);
+    position: relative;
 }
 .iconav{
-    font-size: 30px;
+    font-size: 2em;
     display: flex;
-    position: relative;
-    bottom:240px;
-    left: 235px; 
+    
+    
 }
 .img-nav{
     position: relative;
-    left: -100px;
-    top: 20px;
+    
+    
 }
 
 
