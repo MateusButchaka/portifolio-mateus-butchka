@@ -10,10 +10,10 @@ body{
     font-family: 'Oswald', sans-serif;
     font-family: 'Poppins', sans-serif;
     font-family: 'Tilt Warp', cursive;;
-    scrollbar-width: none; 
-    -ms-overflow-style: none; 
-    overflow: -moz-scrollbars-none; 
-    overflow: hidden scroll; 
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    overflow: hidden scroll;
     animation: moveBackground 200s steps(10000) infinite;
 }
 
@@ -21,57 +21,64 @@ body{
     from { background-position: 0 0; }
     to { background-position: calc(100% + 100vw) 0; }
 }
-  
+
 ::-webkit-scrollbar {
     width: 0px;
-    background: transparent; 
+    background: transparent;
 }
 
 
 .cabecalho{
-    max-width: 100%;
+    /* max-width: 100%;
+    height: auto; */
+    display: block;
     height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 80px;   
+    margin-left: 80px;
 }
-  
+
 nav a {
     color: #fff;
     text-decoration: none;
     font-size: 16px;
-    padding: 12px 20px;
-    margin: 0 10px;
-    transition:  0.3s ease-in-out;  
-    
-}
-  
-nav a:hover {
-   color: #1e7af9;
-   
+    padding: 0px 10px;
+    margin: 0 20px;
+    transition:  0.3s ease-in-out;
+
 }
 
-   
+nav a:hover {
+   color: #1e7af9;
+
+}
+
+
 .nav-fix{
+    top: 0px;
     z-index: 1;
     color: rgb(255, 255, 255);
-    position: relative;
+    position: fixed;
+    backdrop-filter: blur(5px);
 }
 .iconav{
+    position: absolute;
+    left: 200px;
+    top: 0px;
     font-size: 2em;
     display: flex;
-    
-    
 }
-.img-nav{
-    position: relative;
-    
-    
-}
+
+
+
+
 
 
 
@@ -85,7 +92,7 @@ nav a:hover {
 }
 .texto-imagem{
     position: relative;
-    top: 20px;
+    top: 2px;
 }
 .dev{
     margin-top: 210px;
@@ -102,11 +109,11 @@ nav a:hover {
 }
 .Linkedinbuton{
     filter: grayscale(1);
-    
+
 }
 .Linkedinbuton:hover{
     filter: grayscale(0);
-    
+
 }
 
 .minhafoto{
@@ -114,5 +121,5 @@ nav a:hover {
     position:relative;
     top: -400px;
     left: 700px;
-      
+
 }
