@@ -71,27 +71,37 @@ body{
     
     
   }
+  .git-icon:hover{
+    transform: rotate(360deg) scale(1.3);
+    transition: transform 1s ease-in-out;
+  }
+
+  .linkedin-icon:hover{
+    transform: rotate(360deg) scale(1.3);
+    transition: transform 1s ease-in-out;
+    
+  }
   
   .nome-nav {
     position: relative;
-    left: 60%;
+    left: 63%;
     font-size: 2em; 
   }
   
 
   nav {
     z-index: 1;
-    position: fixed;
+    position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    right: 80px;
     display: flex;
     align-items: center;
-    margin-left: 60%
+    
   }
   
   
   nav a {
+    float: right;
     position: relative;
     margin-left: 50px;
     margin-top: 50px;
