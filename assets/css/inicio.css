@@ -1,25 +1,47 @@
-body{
-    margin: 0 auto;
-    position: 0;
-    background-image: url(/assets/img/bg.png);
-    background-size: cover;
-    background-attachment: fixed;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Oswald', sans-serif;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Tilt Warp', cursive;;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    overflow: -moz-scrollbars-none;
-    overflow: hidden scroll;
-    animation: moveBackground 200s steps(10000) infinite;
+body {
+  margin: 0 auto;
+  position: 0;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Tilt Warp', cursive;;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  overflow: hidden scroll;
+  animation: moveBackground 200s steps(10000) infinite, changeBackground 4s ease-in-out infinite;
 }
 
 @keyframes moveBackground {
-    from { background-position: 0 0; }
-    to { background-position: calc(100% + 100vw) 0; }
+  from { background-position: 0 0; }
+  to { background-position: calc(100% + 100vw) 0; }
 }
+
+@keyframes changeBackground {
+  0% {
+    background-image: url(/assets/img/bg.png);
+  }
+  50% {
+    background-image: url(/assets/img/bg2.png);
+  }
+  100% {
+    background-image: url(/assets/img/bg.png);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 ::-webkit-scrollbar {
     width: 0px;
@@ -137,14 +159,22 @@ body{
     width: 500px;
     position: absolute;
     float: inline-end;
-    top: 0;
+    margin-left: -100px;
+    top: 50px;
     margin-top: 0px;
 
 }
+.txt2{
+  position: relative;
+  left: -100px;
+  top: -30px;
+}
 .texto-imagem{
     position: relative;
-    top: 2px;
+    top: 60px;
+    padding: 5px;
 }
+
 .dev{
     margin-top: 210px;
     margin-bottom: 50px;
@@ -160,10 +190,15 @@ body{
 }
 .Linkedinbuton{
     filter: grayscale(1);
+    margin-top: 30px;
+    
+    
 
 }
 .Linkedinbuton:hover{
     filter: grayscale(0);
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
 
 }
 
