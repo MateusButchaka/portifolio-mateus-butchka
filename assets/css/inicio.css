@@ -38,7 +38,7 @@ body{
 
  .nav-fix {
     z-index: 1;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -64,27 +64,27 @@ body{
   
   .img-nav {
     position: relative;
-    left: 30%;
+    left: 20%;
     display: flex;
-    gap: 20%;
+    gap: 50%;
     align-items: center;
     
     
   }
   .git-icon:hover{
-    transform: rotate(360deg) scale(1.3);
+    transform: rotate(360deg) scale(1.1);
     transition: transform 1s ease-in-out;
   }
 
   .linkedin-icon:hover{
-    transform: rotate(360deg) scale(1.3);
+    transform: rotate(360deg) scale(1.1);
     transition: transform 1s ease-in-out;
     
   }
   
   .nome-nav {
     position: relative;
-    left: 63%;
+    left: 53%;
     font-size: 2em; 
   }
   
@@ -115,9 +115,9 @@ body{
 
 
 
-
-
   
+
+ 
 
 
 
