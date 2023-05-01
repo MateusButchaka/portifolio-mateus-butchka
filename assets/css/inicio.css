@@ -45,6 +45,22 @@ body {
   left: 0;
   width: 100%;
   display: flex;
+  opacity: 0;
+}
+.animate-nav {
+  opacity: 1;
+  transform: translateY(0);
+  animation: slide-down 2s ease-out forwards;
+}
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .cabecalho {
   backdrop-filter: blur(5px);

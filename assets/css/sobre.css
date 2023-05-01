@@ -10,8 +10,6 @@
     margin: 0 auto;
     color: white;
 }
-   
- 
 .hidden {
     opacity: 0;
 }
@@ -20,30 +18,19 @@
     opacity: 1;
     transition: opacity 1s ease-in-out;
 }
-   
- 
- 
 .textosobre-container {
     text-align: left;
     display: inline-block;
     vertical-align: top;
     text-align: justify;
 }
-
-
-
-
-
-
 .sobre {
   perspective: 300px;
 }
-
 .textosobre-container {
   animation: text-3d 5s linear infinite alternate;
   transform-origin: bottom;
 }
-
 @keyframes text-3d {
   0% {
     transform: perspective(500px) rotateX(10deg) translateY(25%);
