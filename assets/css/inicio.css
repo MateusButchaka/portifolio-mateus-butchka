@@ -2,7 +2,7 @@ body {
   margin: 0 auto;
   position: 0;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment:scroll ;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   font-family: 'Oswald', sans-serif;
@@ -13,7 +13,27 @@ body {
   overflow: -moz-scrollbars-none;
   overflow: hidden scroll;
   animation: moveBackground 200s steps(10000) infinite, changeBackground 4s ease-in-out infinite;
+  opacity: 0;
+  animation: fadeIn ease 5s;
+  animation-fill-mode: forwards;
 }
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+
+body.loaded {
+  opacity: 1;
+}
+
+
+
 
 @keyframes moveBackground {
   from { background-position: 0 0; }
@@ -49,7 +69,7 @@ body {
 
  .nav-fix {
   z-index: 1;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
