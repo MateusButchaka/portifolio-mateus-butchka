@@ -1,4 +1,4 @@
-window.addEventListener("load", function() {
-    document.body.classList.add("loaded");
-  });
-  
+window.addEventListener('load', function() {
+  document.querySelector('.cabecalho').classList.add('carregado');
+});
+

@@ -38,7 +38,7 @@ body {
   text-decoration: none;
   color: white;
 }
- .nav-fix {
+.nav-fix {
   z-index: 1;
   position: fixed;
   top: 0;
@@ -52,7 +52,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-}
+} 
 .iconav {
   z-index: 1;
   display: flex;
@@ -65,9 +65,15 @@ body {
   gap: 50%;
   align-items: center; 
 }
+.git-icon{
+  transition: transform 1s ease-in-out;
+}
 .git-icon:hover{
   transform: rotate(360deg) scale(1.1);
   transition: transform 1s ease-in-out;
+}
+.linkedin-icon{
+  transition: transform 1s ease-in-out
 }
 .linkedin-icon:hover{
   transform: rotate(360deg) scale(1.1);
@@ -129,6 +135,7 @@ nav a:hover {
 .Linkedinbuton{
   filter: grayscale(1);
   margin-top: 30px;
+  transition: transform 1s ease-in-out;
 }
 .Linkedinbuton:hover{
   filter: grayscale(0);
@@ -140,6 +147,7 @@ nav a:hover {
   position:relative;
   top: -400px;
   left: 700px;
+  transition: transform 1s ease-in-out;
 }
 .minhafoto:hover{
   transform: scale(1.1);
