@@ -36,6 +36,8 @@ window.addEventListener('scroll', handleScrollDebounced);
 
 const imagens = document.getElementsByTagName("img");
 function processarImagens() {
+  let i = 0;
+  let count = 0;
   while (i < imagens.length && count < 10) {
     const img = new Image();
     img.src = imagens[i].src;
