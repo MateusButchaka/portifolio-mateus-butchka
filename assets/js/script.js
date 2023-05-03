@@ -1,7 +1,6 @@
-const minhaImagem = document.getElementById("imgsobre");
-const imagemPosicao = minhaImagem.offsetTop;
+const imagens = document.querySelectorAll('.imgsobre, .imgprojetos, .imghabilidades');
 
-function debounce(func, wait = 20, immediate = true) {
+function debounce(func, wait = 15, immediate = true) {
   let timeout;
   return function() {
     const context = this, args = arguments;
@@ -17,38 +16,25 @@ function debounce(func, wait = 20, immediate = true) {
 }
 
 function handleScroll() {
-  const scrollPosicao = window.pageYOffset;
-  if (scrollPosicao >= imagemPosicao) {
-    minhaImagem.classList.add("visivel");
-    window.removeEventListener('scroll', handleScroll);
-  }
+  const scrollPosicao = window.pageYOffset + window.innerHeight;
+  
+  imagens.forEach(imagem => {
+    const imagemPosicao = imagem.dataset.posicao;
+    
+    if (scrollPosicao >= imagemPosicao) {
+      imagem.classList.add("visivel");
+    }
+  });
+}
+
+function calcularPosicaoImagens() {
+  imagens.forEach(imagem => {
+    const imagemPosicao = imagem.offsetTop;
+    imagem.dataset.posicao = imagemPosicao;
+  });
 }
 
 const handleScrollDebounced = debounce(handleScroll);
 
 window.addEventListener('scroll', handleScrollDebounced);
-
-
-
-
-
-
-
-const imagens = document.getElementsByTagName("img");
-function processarImagens() {
-  let i = 0;
-  let count = 0;
-  while (i < imagens.length && count < 10) {
-    const img = new Image();
-    img.src = imagens[i].src;
-    document.body.appendChild(img);
-    i++;
-    count++;
-  }
- 
-  if (i < imagens.length) {
-    setTimeout(processarImagens, 0);
-  }
-}
-
-processarImagens();
+window.addEventListener('DOMContentLoaded', calcularPosicaoImagens);
