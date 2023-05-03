@@ -1,20 +1,52 @@
-// seleciona a imagem
 const minhaImagem = document.getElementById("imgsobre");
-
-// detecta a posição da imagem em relação ao topo da página
 const imagemPosicao = minhaImagem.offsetTop;
 
-// adiciona um listener para o evento de scroll
-window.addEventListener('scroll', function handler() {
-  // detecta a posição atual do scroll da página
+function debounce(func, wait = 20, immediate = true) {
+  let timeout;
+  return function() {
+    const context = this, args = arguments;
+    const later = function() {
+      timeout = null;
+      if (!immediate) func.apply(context, args);
+    };
+    const callNow = immediate && !timeout;
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+    if (callNow) func.apply(context, args);
+  };
+}
+
+function handleScroll() {
   const scrollPosicao = window.pageYOffset;
-
-  // verifica se a posição do scroll é maior ou igual à posição da imagem
   if (scrollPosicao >= imagemPosicao) {
-    // adiciona a classe "visivel" à imagem
     minhaImagem.classList.add("visivel");
-
-    // remove o listener de scroll
-    window.removeEventListener('scroll', handler);
+    window.removeEventListener('scroll', handleScroll);
   }
-});
+}
+
+const handleScrollDebounced = debounce(handleScroll);
+
+window.addEventListener('scroll', handleScrollDebounced);
+
+
+
+
+
+
+
+const imagens = document.getElementsByTagName("img");
+function processarImagens() {
+  while (i < imagens.length && count < 10) {
+    const img = new Image();
+    img.src = imagens[i].src;
+    document.body.appendChild(img);
+    i++;
+    count++;
+  }
+ 
+  if (i < imagens.length) {
+    setTimeout(processarImagens, 0);
+  }
+}
+
+processarImagens();
