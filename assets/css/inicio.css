@@ -11,7 +11,7 @@ body {
   -ms-overflow-style: none;
   overflow: -moz-scrollbars-none;
   overflow: hidden scroll;
-  animation: moveBackground 200s steps(10000) infinite, changeBackground 4s ease-in-out infinite;
+  animation: moveBackground 100s steps(100000) infinite, changeBackground 4s ease-in-out infinite;
 
 }
 @keyframes moveBackground {
@@ -179,7 +179,7 @@ nav a:hover {
 }
 .Linkedinbuton:hover{
   filter: grayscale(0);
-  transform: scale(1.1);
+  transform: scale(1.2);
   transition: transform 0.5s ease-in-out;
 }
 .minhafoto{
