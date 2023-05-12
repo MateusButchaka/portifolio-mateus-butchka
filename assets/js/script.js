@@ -27,3 +27,6 @@ function handleScroll() {
 const handleScrollDebounced = debounce(handleScroll);
 
 window.addEventListener('scroll', handleScrollDebounced);
+
+
+
