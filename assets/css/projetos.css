@@ -10,3 +10,28 @@
   opacity: 1;
   transform: translateX(0);
 }
+
+
+
+.imgicopro {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+}
+
+.carousel {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel-item {
+  scroll-snap-align: start;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
