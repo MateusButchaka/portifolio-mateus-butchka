@@ -1,25 +1,3 @@
-/* Table of Contents
-----------------------------------
-
-0- Global CSS
-1- Heading CSS
-2- Button CSS
-3- Header Area CSS
-4- Home Area CSS
-5- About Area CSS
-6- Qualification Area CSS 
-7- Services Area CSS
-8- Portfolio Area CSS
-9- Testimonials Area CSS
-10- Blog Area CSS
-11- Contact Area CSS
-12- Footer Area CSS
-13- Scroll-Top Area CSS
-
-*/
-
-
-/*--------------------- 0- Global CSS (Start) ---------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 
@@ -117,11 +95,6 @@ section{
     background: var(--purple);
 }
 
-/*--------------------- 0- Global CSS (End) ---------------------*/
-
-
-
-/*--------------------- 1- Heading CSS (Start) ---------------------*/
 .heading{
     margin-bottom: 2rem;
 }
@@ -149,12 +122,6 @@ section{
     width: 80%;
     margin-left: 10%;
 }
-
-/*--------------------- 1- Heading CSS (End) ---------------------*/
-
-
-
-/*--------------------- 2- Button CSS (Start) ---------------------*/
 .btn{
     display: inline-block;
     padding: 1rem 2rem;
@@ -173,12 +140,6 @@ section{
     background-color: var(--purple);
     cursor: pointer;
 }
-
-/*--------------------- 2- Button CSS (End) ---------------------*/
-
-
-
-/*--------------------- 3- Header Area CSS (Start) ---------------------*/
 header{
     position: fixed;
     top: 0;
@@ -223,7 +184,7 @@ header .navbar a {
 
 header .navbar a:hover,
 header .navbar a.active {
-    color: blue; /* Defina a cor azul aqui */
+    color: blue; 
 }
 
 
@@ -267,12 +228,6 @@ header .fa-times{
 header #menu-btn:hover{
     color: var(--purple);
 }
-
-/*--------------------- 3- Header Area CSS (End) ---------------------*/
-
-
-
-/*--------------------- 4- Home Area CSS (Start) ---------------------*/
 
 
 .home .box-container{
@@ -356,11 +311,7 @@ header #menu-btn:hover{
     overflow: hidden;
     border-right: 1px solid #ececec; 
 }
-/*--------------------- 4- Home Area CSS (End) ---------------------*/
 
-
-
-/*--------------------- 5- About Area CSS (Start) ---------------------*/
 .about .box-container{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -550,7 +501,7 @@ header #menu-btn:hover{
 .skill-item.item1 .box:nth-child(7) .progress-bar span{
     width:75%;
 }
-/*         */
+
 .skill-item.item2 .box:nth-child(1) .progress-bar span{
     width:75%;
 }
@@ -577,11 +528,6 @@ header #menu-btn:hover{
 .skill-item.item2 .box:nth-child(7) .progress-bar span{
     width:65%;
 }
-/*--------------------- 5- About Area CSS (End) ---------------------*/
-
-
-
-/*--------------------- 6- Qualification Area CSS (Start) ---------------------*/
 .qualification .box-container{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -652,12 +598,6 @@ header #menu-btn:hover{
     font-size: 1.6rem;
     line-height: 2.5rem;
 }
-
-/*--------------------- 6- Qualification Area CSS (End) ---------------------*/
-
-
-
-/*--------------------- 7- Services Area CSS (Start) ---------------------*/
 .service .box-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -688,8 +628,6 @@ header #menu-btn:hover{
     transition: all 0.5s linear;
     transform: scale(1);
     transition: transform 0.3s ease;
-
-    /* Adiciona uma borda com sombra azul/roxa */
     box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
 }
 
@@ -731,8 +669,6 @@ header #menu-btn:hover{
     opacity: 1;
 }
 
-
-/* As regras específicas para cada classe */
 .service-item.iwo8 {
     background-image: url('../images/Portfolio/iwo8ultra.png');
     object-fit: contain;
@@ -774,7 +710,7 @@ header #menu-btn:hover{
 .service-item.luan:hover,
 .service-item.airforce:hover,
 .service-item.atelie:hover {
-   background-image: url(../images/Home/bg.png); /* Define a imagem de fundo quando hover */
+   background-image: url(../images/Home/bg.png); 
    animation: moveBackground 300s linear infinite, changeBackground 4s ease-in-out infinite;
 }
 
@@ -799,12 +735,6 @@ header #menu-btn:hover{
     }
 }
 
-
-/*--------------------- 7- Services Area CSS (End) ---------------------*/
-
-
-
-/*--------------------- 8- Portfolio Area CSS (Start) ---------------------*/
 .controls{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -951,9 +881,6 @@ header #menu-btn:hover{
             transform: scale(1.2);
 }
 
-/*CSS3 Animation Effects for Magnific Popup*/
-
-/* start state */
 .mfp-newspaper  .mfp-with-anim {
     opacity: 0;
     -webkit-transition: all 0.2s ease-in-out; 
@@ -968,7 +895,6 @@ header #menu-btn:hover{
             transition: all 0.2s ease-in-out; 
 }
   
-/* animate in */
 .mfp-newspaper.mfp-ready .mfp-with-anim {
     opacity: 1;
     -webkit-transform: scale(1) rotate(0deg);
@@ -978,7 +904,6 @@ header #menu-btn:hover{
     opacity: 0.8;
 }
   
-/* animate out */
 .mfp-newspaper.mfp-removing .mfp-with-anim {
     -webkit-transform: scale(0) rotate(500deg);
             transform: scale(0) rotate(500deg);
@@ -988,12 +913,6 @@ header #menu-btn:hover{
     opacity: 0;
 }
 
-
-/*--------------------- 8- Portfolio Area CSS (End) ---------------------*/
-
-
-
-/*--------------------- 9- Testimonials Area CSS (Start) ---------------------*/
 .testimonial-slider{
     position: relative;
     padding-bottom: 4rem;
@@ -1047,11 +966,7 @@ header #menu-btn:hover{
     font-weight: 400;
 }
 
-/*--------------------- 9- Testimonials Area CSS (End) ---------------------*/
 
-
-
-/*--------------------- 10- Blog Area CSS (Start) ---------------------*/
 .blog-slider{
     position: relative;
     padding-bottom: 4rem;
@@ -1126,11 +1041,7 @@ header #menu-btn:hover{
     margin-top: 1rem;
 }
 
-/*--------------------- 10- Blog Area CSS (End) ---------------------*/
 
-
-
-/*--------------------- 11- Contact Area CSS (Start) ---------------------*/
 .contact .alert{
     font-size: 2rem;
     color: var(--purple);
@@ -1251,11 +1162,7 @@ header #menu-btn:hover{
     margin-top: 1rem;
 }
 
-/*--------------------- 11- Contact Area CSS (End) ---------------------*/
 
-
-
-/*--------------------- 12- Footer Area CSS (Start) ---------------------*/
 footer{
     box-shadow: 0 2px 4px rgba(255, 255, 255, 0.751);
     backdrop-filter: blur(3px);
@@ -1307,51 +1214,45 @@ footer .content p{
 footer .content p span{
     color: var(--purple);
 }
-/* Ícone personalizado para o Facebook */
+
 .social .fab.fa-facebook {
     background-image: url('../images/socialincon/facebook.png');
-    width: 32px; /* Largura da imagem */
-    height: 32px; /* Altura da imagem */
+    width: 32px; 
+    height: 32px; 
     display: inline-block;
     background-size: cover;
-    text-indent: -9999px; /* Isso oculta o texto do link de âncora */
+    text-indent: -9999px; 
 }
 
-/* Ícone personalizado para o Instagram */
 .social .fab.fa-instagram {
     background-image: url('../images/socialincon/instagram.png');
-    width: 32px; /* Largura da imagem */
-    height: 32px; /* Altura da imagem */
+    width: 32px; 
+    height: 32px; 
     display: inline-block;
     background-size: cover;
-    text-indent: -9999px; /* Isso oculta o texto do link de âncora */
+    text-indent: -9999px; 
 }
 
-/* Ícone personalizado para o LinkedIn */
 .social .fab.fa-linkedin {
     background-image: url('../images/socialincon/linkedin.png');
-    width: 32px; /* Largura da imagem */
-    height: 32px; /* Altura da imagem */
+    width: 32px; 
+    height: 32px; 
     display: inline-block;
     background-size: cover;
-    text-indent: -9999px; /* Isso oculta o texto do link de âncora */
+    text-indent: -9999px; 
 }
 
-/* Ícone personalizado para o GitHub */
+
 .social .fab.fa-github {
     background-image: url('../images/socialincon/github.png');
-    width: 32px; /* Largura da imagem */
-    height: 32px; /* Altura da imagem */
+    width: 32px; 
+    height: 32px; 
     display: inline-block;
     background-size: cover;
-    text-indent: -9999px; /* Isso oculta o texto do link de âncora */
+    text-indent: -9999px; 
 }
 
-/*--------------------- 12- Footer Area CSS (End) ---------------------*/
 
-
-
-/*--------------------- 13- Scroll-Top (Start) ---------------------*/
 .scroll-top{
     position: fixed;
     bottom: 1rem;
@@ -1385,4 +1286,3 @@ footer .content p span{
     color:var(--black);
   }
 
-/*--------------------- 13- Scroll-Top (End) ---------------------*/
