@@ -12,3 +12,5 @@ function typeText() {
     }, 200); 
 }
 typeText();
+
+

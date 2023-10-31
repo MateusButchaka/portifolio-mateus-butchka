@@ -465,12 +465,13 @@ header #menu-btn:hover{
     font-weight: 400;
 }
 
- .skill-item .box .progress-bar{
+.skill-item .box .progress-bar{
     width:100%;
     background:#222;
     overflow:hidden;
     height:1rem;
     border-radius: 50rem;
+    transition: width 2s;
 }
 
  .skill-item .box .progress-bar span{
@@ -481,53 +482,102 @@ header #menu-btn:hover{
 
  .skill-item.item1 .box:nth-child(1) .progress-bar span{
     width:95%;
+    --percent: 95;
 }
  .skill-item.item1 .box:nth-child(2) .progress-bar span{
     width:95%;
+    --percent: 95;
 }
  .skill-item.item1 .box:nth-child(3) .progress-bar span{
     width:95%;
+    --percent: 95;
 }
 .skill-item.item1 .box:nth-child(4) .progress-bar span{
     width:70%;
+    --percent: 70;
 }
 .skill-item.item1 .box:nth-child(5) .progress-bar span{
     width:100%;
+    --percent: 100;
 }
 
 .skill-item.item1 .box:nth-child(6) .progress-bar span{
     width:85%;
+    --percent: 85;
 }
 .skill-item.item1 .box:nth-child(7) .progress-bar span{
-    width:75%;
+    width:95%;
+    --percent: 95;
 }
 
 .skill-item.item2 .box:nth-child(1) .progress-bar span{
     width:75%;
+    --percent: 75;
 }
 
  .skill-item.item2 .box:nth-child(2) .progress-bar span{
     width:85%;
+    --percent: 85;
 }
 
  .skill-item.item2 .box:nth-child(3) .progress-bar span{
     width:10%;
+    --percent: 10;
 }
 
 .skill-item.item2 .box:nth-child(4) .progress-bar span{
     width:10%;
+    --percent: 10;
 }
 
  .skill-item.item2 .box:nth-child(5) .progress-bar span{
     width:80%;
+    --percent: 80;
 }
 
  .skill-item.item2 .box:nth-child(6) .progress-bar span{
     width:45%;
+    --percent: 45;
 }
 .skill-item.item2 .box:nth-child(7) .progress-bar span{
     width:65%;
+    --percent: 65;
 }
+
+
+
+.progress-bar span {
+    width: 0;
+    display: block;
+    background: var(--purple);
+    transition: width 1s;
+}
+
+.skill-item {
+    opacity: 0;
+    transition: opacity 1s, transform 1s;
+}
+
+.skill-item.in-view {
+    opacity: 1;
+    transform: translateX(0);
+}
+.skill-item .box .progress-bar span {
+    animation: progress-animation 2s; /* Nome da animação e duração (2 segundos) */
+}
+
+@keyframes progress-animation {
+    from {
+        width: 0;
+    }
+    to {
+        width: calc(var(--percent) * 1%);
+    }
+}
+
+
+
+
 .qualification .box-container{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -704,6 +754,29 @@ header #menu-btn:hover{
     object-fit: contain;
     background-size: cover;
 }
+/* .service-item.JoaquinTavora{
+    background-image: url('../images/Portfolio/JoaquinTavora.png');
+    object-fit: contain;
+    background-size: cover;
+}
+.service-item.ElianeRocha {
+    background-image: url('../images/Portfolio/ElianeRocha.png');
+    object-fit: contain;
+    background-size: cover;
+}
+.service-item.---- {
+    background-image: url('../images/Portfolio/AtelieDasArtes.png');
+    object-fit: contain;
+    background-size: cover;
+}
+.service-item.----{
+    background-image: url('../images/Portfolio/AtelieDasArtes.png');
+    object-fit: contain;
+    background-size: cover;
+} */
+
+
+
 .service-item.iwo8:hover,
 .service-item.cartao:hover,
 .service-item.expo:hover,
@@ -713,6 +786,13 @@ header #menu-btn:hover{
    background-image: url(../images/Home/bg.png); 
    animation: moveBackground 300s linear infinite, changeBackground 4s ease-in-out infinite;
 }
+
+
+
+
+
+
+
 
 @keyframes moveBackground {
     from {
